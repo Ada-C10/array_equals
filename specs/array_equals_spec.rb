@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require 'minitest/reporters'
 require_relative '../lib/array_equals'
 
