@@ -17,9 +17,10 @@ def array_equals(array1, array2)
   end
   # array1.length == array2.length ? flag = 0 : flag = 1
   array1.each_with_index do |num, i|
+    # if array1[i] == array2[i] then flag = 0, else flag += 1
     array2[i] == num ? flag = 0 : flag += 1
   end
-
+  # return true if flag == 0 else return false
   return flag == 0
   raise NotImplementedError
 end
