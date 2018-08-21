@@ -3,11 +3,17 @@
 require 'pry'
 
 def array_equals(array1, array2)
-  # and_array = array1 && array2
-  # if and_array == array1 && array1 == array2
-  #   return true
-  # else
-  #   return false
-  # end
-  array1 == array2
+  and_array = array1 && array2
+
+  if and_array == array1 && and_array == array2
+    return true
+
+  else
+    return false
+  end
 end
+
+# #simplest way, not allowed
+# def array_equals(array1, array2)
+#   array1 == array2
+# end
