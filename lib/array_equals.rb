@@ -4,7 +4,7 @@ def array_equals(array1, array2)
   if array1 == nil && array2 == nil
     return true
   end
-  if array1 == nil && array2.nil? == false || array2 == nil && array1.nil? == false
+  if array1 == nil || array2 == nil
     return false
   end
   if array1.length != array2.length
