@@ -3,7 +3,7 @@
 
 
 def emptynil?(array)
-  return array.nil? || array.empty?
+  return array == nil || array.length == 0
 end
 
 def array_equals(array1, array2)
@@ -20,7 +20,7 @@ def array_equals(array1, array2)
       array1.length.times do |i|
         if array1[i] != array2[i]
           return false
-        end        
+        end
       end
 
       return true
