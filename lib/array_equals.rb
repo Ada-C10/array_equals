@@ -9,7 +9,10 @@ def array_equals(array1, array2)
   # if array1.length != array2.length
     return false
   else
-    array1.each do |element|
+    if array1 == nil && array1 == array2
+      return true
+    else
+      array1.each do |element|
       if element == array2[i]
         i += 1
         output = true
@@ -25,6 +28,7 @@ def array_equals(array1, array2)
       end
     end
   end
+end
   return true
 end
 
