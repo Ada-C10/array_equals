@@ -19,7 +19,7 @@ def array_equals(array1, array2)
   end
 
 #Now we know that at least both arrays have elements we can determine their length
-#and look at each element to see if each index is the same. 
+#and look at each element to see if each index is the same.
   len1 = array1.length
   len2 = array2.length
 
@@ -35,7 +35,3 @@ def array_equals(array1, array2)
   end
   return true
 end
-
-array1 = nil
-array2 = [10,20]
-puts array_equals(array1, array2)
